@@ -1,0 +1,5 @@
+#
+#Sat Apr 20 21:59:51 JST 2013
+day=20
+year=2014
+month=4
