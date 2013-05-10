@@ -17,6 +17,12 @@ public class Main {
 	    d.construct();
 	    String res = hb.getResult();
 	    System.out.println(res + "が作成されました");
+	} else if (args[0].equals("xml")) {
+	    XMLBuilder xb = new XMLBuilder();
+            Director d = new Director(xb);
+            d.construct();
+            String res = xb.getResult();
+            System.out.println(res + "が作成されました");
 	} else {
 	    usage();
 	    System.exit(0);
@@ -24,6 +30,6 @@ public class Main {
     }
 
     public static void usage() {
-	System.out.println("plain or html");
+	System.out.println("plain or html or xml");
     }
 }
